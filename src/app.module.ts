@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TownsModule } from './towns/towns.module';
 import { AnnouncementModule } from './announcement/announcement.module';
 import { PlaceModule } from './place/place.module';
+import { ExampleModule } from './example/example.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { PlaceModule } from './place/place.module';
     TownsModule,
     AnnouncementModule,
     PlaceModule,
+    ExampleModule,
   ],
   controllers: [AppController],
   providers: [AppService],
